@@ -1,0 +1,13 @@
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/bin/Debug/netcoreapp3.1/CarFactory
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.deps.json
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.runtimeconfig.json
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.runtimeconfig.dev.json
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.dll
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.pdb
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.csprojAssemblyReference.cache
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.AssemblyInfoInputs.cache
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.AssemblyInfo.cs
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.csproj.CoreCompileInputs.cache
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.dll
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.pdb
+/home/gleb/RiderProjects/CarVehicleParts/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.genruntimeconfig.cache

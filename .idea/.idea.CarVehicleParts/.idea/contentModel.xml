@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_CarVehicleParts.1480483540.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="CarFactory" t="IncludeRecursive">
+        <e p="ActionPossibility" t="Include">
+          <e p="ActionImpossible.cs" t="Include" />
+          <e p="ActionPossible.cs" t="Include" />
+          <e p="IActionPossible.cs" t="Include" />
+        </e>
+        <e p="BrakeSystem.cs" t="Include" />
+        <e p="Car" t="Include">
+          <e p="BodyType.cs" t="Include" />
+          <e p="Car.cs" t="Include" />
+        </e>
+        <e p="CarConfigurator.cs" t="Include" />
+        <e p="CarFactory.cs" t="Include" />
+        <e p="CarFactory.csproj" t="IncludeRecursive" />
+        <e p="CarPart" t="Include" />
+        <e p="CarPart.cs" t="Include" />
+        <e p="Engine.cs" t="Include" />
+        <e p="Model" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Suspension.cs" t="Include" />
+        <e p="Transmission.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="CarFactory.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="CarVehicleParts.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
