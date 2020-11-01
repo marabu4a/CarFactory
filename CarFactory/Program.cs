@@ -6,7 +6,8 @@ namespace CarFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var carFactory = new Factory.CarFactory();
+            carFactory.ConstructCar();
         }
     }
 }

@@ -6,7 +6,8 @@ namespace CarFactory.Car
         Van,
         Roadster,
         Coupe,
-        Limo,
-        Kombi
+        Hatchback,
+        Sedan,
+        Offroad
     }
 }

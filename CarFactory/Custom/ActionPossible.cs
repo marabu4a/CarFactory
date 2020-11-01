@@ -1,4 +1,4 @@
-namespace CarFactory.ActionPossibility
+namespace CarFactory.Custom
 {
     public class ActionPossible : IActionPossible
     {

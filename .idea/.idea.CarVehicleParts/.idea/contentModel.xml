@@ -5,26 +5,51 @@
     <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_CarVehicleParts.1480483540.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CarFactory" t="IncludeRecursive">
-        <e p="ActionPossibility" t="Include">
-          <e p="ActionImpossible.cs" t="Include" />
-          <e p="ActionPossible.cs" t="Include" />
-          <e p="IActionPossible.cs" t="Include" />
-        </e>
-        <e p="BrakeSystem.cs" t="Include" />
         <e p="Car" t="Include">
           <e p="BodyType.cs" t="Include" />
           <e p="Car.cs" t="Include" />
         </e>
-        <e p="CarConfigurator.cs" t="Include" />
-        <e p="CarFactory.cs" t="Include" />
         <e p="CarFactory.csproj" t="IncludeRecursive" />
-        <e p="CarPart" t="Include" />
-        <e p="CarPart.cs" t="Include" />
-        <e p="Engine.cs" t="Include" />
-        <e p="Model" t="Include" />
+        <e p="CarPart" t="Include">
+          <e p="CarPart.cs" t="Include" />
+          <e p="ChassisModel" t="Include">
+            <e p="BrakeSystem.cs" t="Include" />
+            <e p="Chassis.cs" t="Include" />
+            <e p="Drivetrain.cs" t="Include" />
+            <e p="SteeringType.cs" t="Include" />
+            <e p="Suspension.cs" t="Include" />
+            <e p="Wheel.cs" t="Include" />
+          </e>
+          <e p="EngineModel" t="Include">
+            <e p="Engine.cs" t="Include" />
+            <e p="EngineType.cs" t="Include" />
+            <e p="FuelSystem.cs" t="Include" />
+            <e p="IgnitionSystem.cs" t="Include" />
+            <e p="Turbine.cs" t="Include" />
+          </e>
+          <e p="TransmissionModel" t="Include">
+            <e p="Clutch.cs" t="Include" />
+            <e p="Transmission.cs" t="Include" />
+            <e p="TransmissionType.cs" t="Include" />
+          </e>
+        </e>
+        <e p="CarPartsConfigurator.cs" t="Include" />
+        <e p="ComponentCarPart.cs" t="Include" />
+        <e p="Custom" t="Include">
+          <e p="ActionImpossible.cs" t="Include" />
+          <e p="ActionPossible.cs" t="Include" />
+          <e p="IActionPossible.cs" t="Include" />
+          <e p="RandomGenerator.cs" t="Include" />
+        </e>
+        <e p="Factory" t="Include">
+          <e p="CarFactory.cs" t="Include" />
+          <e p="CarPartsFactory.cs" t="Include" />
+          <e p="ChassisFactory.cs" t="Include" />
+          <e p="EngineFactory.cs" t="Include" />
+          <e p="IFactory.cs" t="Include" />
+          <e p="TransmissionFactory.cs" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
-        <e p="Suspension.cs" t="Include" />
-        <e p="Transmission.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
