@@ -12,7 +12,7 @@ namespace CarFactory.Factory
             Array types = Enum.GetValues(typeof(TransmissionType));
             return (TransmissionType) types.GetValue(randomGenerator.GetRandomValue(types.Length));
         }
-        public override ComponentCarPart Create()
+        public override CarPart.CarPart Create()
         {
 
             var type = GetRandomTransmissionType();

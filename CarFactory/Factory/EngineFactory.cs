@@ -25,11 +25,12 @@ namespace CarFactory.Factory
             return (IgnitionSystem.IgnitionSystemType) types.GetValue(randomGenerator.GetRandomValue(types.Length));
         }
 
-        public override ComponentCarPart Create()
+        public override CarPart.CarPart Create()
         {
             var type = GetRandomEngineType();
             var engine = new Engine(
                 type: GetRandomEngineType(),
+                baseCost: randomGenerator.GetRandomValueInRange(10000, 30000),
                 manufacturer: GetRandomManufacturer(),
                 displacement: randomGenerator.GetRandomValueInRange(1000, 6300),
                 power: randomGenerator.GetRandomValueInRange(100, 400),

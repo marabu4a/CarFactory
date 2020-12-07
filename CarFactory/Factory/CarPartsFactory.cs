@@ -1,19 +1,17 @@
 using System;
 using System.Collections.Generic;
+using CarFactory.CarPart.ChassisModel;
 
 namespace CarFactory.Factory
 { 
-    public abstract class CarPartsFactory : IFactory
+    public abstract class CarPartsFactory : IFactory<CarPart.CarPart>
     {
-         public abstract ComponentCarPart Create();
-         
-         public string GetRandomManufacturer()
+        public string GetRandomManufacturer()
          {
-             return listManufacurers[randomGenerator.GetRandomValueInRange(0,listManufacurers.Count)];
+             return listOfManufacturers[randomGenerator.GetRandomValueInRange(0,listOfManufacturers.Count)];
          }
 
-
-         public IReadOnlyList<String> listManufacurers = new List<String>
+        public IReadOnlyList<String> listOfManufacturers = new List<String>
          {
              "Mitsubishi motors",
              "VAG",
@@ -23,5 +21,7 @@ namespace CarFactory.Factory
              "Jaguar-Land Rover",
              "BMW Motors"
          };
+        
+        
     }
 }

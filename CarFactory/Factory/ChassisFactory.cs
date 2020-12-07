@@ -25,13 +25,14 @@ namespace CarFactory.Factory
             return (SteeringPowerType) types.GetValue(randomGenerator.GetRandomValue(types.Length));
         }
 
-        public BrakeSystem.BrakesType GetRandomBrakeType()
+        public BrakeSystem.BrakesType GetRandomBrakesType()
         {
             Array types = Enum.GetValues(typeof(BrakeSystem.BrakesType));
-            return (BrakeSystem.BrakesType) types.GetValue(randomGenerator.GetRandomValue(types.Length));
+            var brakes = (BrakeSystem.BrakesType) types.GetValue(randomGenerator.GetRandomValue(types.Length));
+            return brakes;
         }
 
-        public override ComponentCarPart Create()
+        public override CarPart.CarPart Create()
         {
             var rearSuspension = new Suspension(
                 type: GetRandomSuspensionType(),
@@ -50,7 +51,7 @@ namespace CarFactory.Factory
             var steeringPowerType = GetRandomSteeringPowerType();
 
             var brakeSystem = new BrakeSystem(
-                type: GetRandomBrakeType(),
+                type: GetRandomBrakesType(),
                 cost: randomGenerator.GetRandomValueInRange(10000, 50000),
                 manufacturer: GetRandomManufacturer());
 

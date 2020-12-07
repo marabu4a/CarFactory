@@ -1,12 +1,16 @@
+using System;
+using CarFactory.Car;
 using CarFactory.Custom;
 
 namespace CarFactory.CarPart.EngineModel
 {
     public class FuelSystem : CarPart
     {
-        public override int _cost { get; }
+        protected override int _cost { get; set; }
+        protected override string _name => "Топливная система";
         public FuelSystemType Type { get; }
-        public FuelSystem(int cost, FuelSystemType type,string manufacturer) : base(1,manufacturer)
+
+        public FuelSystem(int cost, FuelSystemType type, string manufacturer) : base(1, manufacturer)
         {
             _cost = cost;
             Type = type;
@@ -19,7 +23,13 @@ namespace CarFactory.CarPart.EngineModel
             TDI
         }
 
-        public override IActionPossible AvailableForThisCar(Car.Car car)
+        public override string ToString()
+        {
+            return String.Format(" --- {0} : тип топливной системы: {1} , цена: {2} ", Name, Cost,
+                Manufacturer);
+        }
+
+        public override IActionPossible AvailableForThisCar<T>(Car<T> car)
         {
             if (Type == FuelSystemType.MPI && car.Engine.Type == EngineType.Diesel)
             {

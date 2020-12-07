@@ -1,16 +1,19 @@
+using System;
+using CarFactory.Car;
 using CarFactory.Custom;
 
 namespace CarFactory.CarPart.EngineModel
 {
     public class IgnitionSystem : CarPart
     {
-        public IgnitionSystem(IgnitionSystemType type, int cost, string manufacturer) : base(1,manufacturer)
+        public IgnitionSystem(IgnitionSystemType type, int cost, string manufacturer) : base(1, manufacturer)
         {
             Type = type;
             _cost = cost;
         }
 
-        public override int _cost { get; }
+        protected override int _cost { get; set; }
+        protected override string _name => "Система зажигания";
 
         public enum IgnitionSystemType
         {
@@ -18,9 +21,15 @@ namespace CarFactory.CarPart.EngineModel
             MechanicallyTimed
         }
 
+        public override string ToString()
+        {
+            return String.Format(" --- {0}: тип топливной системы: {1}, цена : {2} , производитель: {3}", Name, Type,Cost,
+                Manufacturer);
+        }
+
         public IgnitionSystemType Type { get; }
 
-        public override IActionPossible AvailableForThisCar(Car.Car car)
+        public override IActionPossible AvailableForThisCar<T>(Car<T> car)
         {
             if (car.Engine.Type == EngineType.Electric)
             {

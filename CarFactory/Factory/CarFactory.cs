@@ -8,91 +8,112 @@ using CarFactory.Custom;
 
 namespace CarFactory.Factory
 {
-    public class CarFactory : IFactory
+    public class CarFactory : IFactory<Car<CarPart.CarPart>>
     {
+        protected static event Logger.LogHandler Log;
         private ChassisFactory _chassisFactory = new ChassisFactory();
         private EngineFactory _engineFactory = new EngineFactory();
         private TransmissionFactory _transmissionFactory = new TransmissionFactory();
-        private Car.Car _car = new Car.Car();
-
-        private Car.Car CreateCar()
+        private BodyFactory _bodyFactory = new BodyFactory();
+        private Car<CarPart.CarPart> _car = new Car.Car<CarPart.CarPart>();
+        public override Car<CarPart.CarPart> Create()
         {
-            Console.WriteLine("Инициализация....");
-            Console.WriteLine("-----------------------");
-            Console.WriteLine("Выбираю тип кузова...");
+            Log("Инициализация....");
+            Log("-----------------------");
+            Log("Выбираю тип кузова...");
             Thread.Sleep(2000);
-            _car.AddBodyType(CreateBodyType());
-            Console.WriteLine("Создаю шасси....");
+            AddBody();
+            Log("Создаю шасси....");
             Thread.Sleep(2000);
             AddChassis();
-            Console.WriteLine("Создаю двигатель....");
+            Log("Создаю двигатель....");
             AddEngine();
-            Thread.Sleep(2000);
-            Console.WriteLine("Создаю трансмиссию...");
+            Thread.Sleep(2000); 
+            Log("Создаю трансмиссию...");
             Thread.Sleep(2000);
             AddTransmission();
             return _car;
-        }
-        public void ConstructCar()
+        } 
+        public Car<CarPart.CarPart> ConstructCar()
         {
-            var newCar = CreateCar();
+            var newCar = Create();
             if (CanGetThisCar(newCar).IsPossible)
             {
-                Console.WriteLine("Машина создана!"
-                );
+                Log("Машина создана!");
+                return newCar;
             }
-            else
+            throw new CarException("С этой машиной проблемы!",newCar);
+        }
+
+        private void AddBody()
+        {
+            var newBody = CreateBody();
+            try
             {
-                Console.WriteLine(CanGetThisCar(newCar).Reason);
+                _car.Add(newBody);
+            }
+            catch (CarPartException e)
+            {
+                Log($"Данный кузов {e.CarPart.Id} не подойдет,поставлю другой");
+                AddBody();
             }
         }
 
         private void AddEngine()
         {
             var newEngine = CreateEngine();
-            while (!_car.AddEngine(newEngine))
+            try
             {
-                Console.WriteLine("Данный двигатель не подойдет,создаю другой");
-                newEngine = CreateEngine();
+                _car.Add(newEngine);
+            }
+            catch (CarPartException e)
+            {
+                Log($"  Данный двигатель {e.CarPart.Id}  не подойдет, создаю другой");
+                AddEngine();
             }
         }
 
         private void AddChassis()
         {
             var newChassis = CreateChassis();
-            while (!_car.AddChassis(newChassis))
+            try
             {
-                Console.WriteLine("Данное шасси не подходит к этому автомобилю,создаю другое");
-                newChassis = CreateChassis();
+                _car.Add(newChassis);
+            }
+            catch (CarPartException e)
+            {
+                Log($"Данное шасси {e.CarPart.Id} не подходит к этому автомобилю,создаю другое");
+                AddChassis();
             }
         }
 
         private void AddTransmission()
         {
             var newTransmission = CreateTransmissin();
-            while (!_car.AddTransmission(newTransmission))
+            try
             {
-                Console.WriteLine("Данная трансмиссия не походит к этому автомобилю, создаю другую");
-                newTransmission = CreateTransmissin();
+                _car.Add(newTransmission);
+            }
+            catch (CarPartException e)
+            {
+                Log($"$Данная трансмиссия {e.CarPart.Id} не подходит к этому автомобилю, создаю другую");
+                AddTransmission();
             }
         }
-
-        private BodyType CreateBodyType()
-        {
-            Array types = Enum.GetValues(typeof(BodyType));
-            return (BodyType) types.GetValue(randomGenerator.GetRandomValue(types.Length));
-        }
-
 
         private Chassis CreateChassis()
         {
             return (Chassis) _chassisFactory.Create();
-            
         }
 
         private Engine CreateEngine()
         {
             return (Engine) _engineFactory.Create();
+        }
+
+        private Body CreateBody()
+        {
+            return (Body) _bodyFactory.Create();
         }
 
         private Transmission CreateTransmissin()
@@ -103,14 +124,16 @@ namespace CarFactory.Factory
         public CarFactory()
         {
             Reset();
+            Log += Logger.LogInConsole;
+            Log += Logger.LogInFile;
         }
 
         public void Reset()
         {
-            _car = new Car.Car();
+            _car = new Car<CarPart.CarPart>();
         }
 
-        private IActionPossible CanGetThisCar(Car.Car car)
+        private IActionPossible CanGetThisCar(Car<CarPart.CarPart> car)
         {
             if (car == null)
             {
@@ -124,5 +147,6 @@ namespace CarFactory.Factory
 
             return new ActionPossible();
         }
+        
     }
 }

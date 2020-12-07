@@ -1,9 +1,11 @@
+using System;
+
 namespace CarFactory.CarPart.ChassisModel
 {
     public enum SteeringPowerType
     {
-        Electric,
-        Hydraulic,
-        ElectroHydraulic
+        Electric = 1,
+        Hydraulic = 2,
+        ElectroHydraulic = 3
     }
 }

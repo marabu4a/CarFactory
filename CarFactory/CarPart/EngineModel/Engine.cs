@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using CarFactory.Car;
 using CarFactory.CarPart.TransmissionModel;
 using CarFactory.Custom;
 
@@ -16,11 +18,9 @@ namespace CarFactory.CarPart.EngineModel
         private FuelSystem _fuelSystem { get; set; }
         private IgnitionSystem _ignitionSystem { get; set; }
 
-        public override int _cost
-        {
-            get => _fuelSystem.Cost + _ignitionSystem.Cost;
-        }
-        
+        protected override int _cost { get; set; }
+        protected override string _name => "Двигатель";
+
         public EngineType Type { get; }
         public string Displacement => _displacement + "cm3";
         public string Torque => _torque + "H/m";
@@ -53,7 +53,7 @@ namespace CarFactory.CarPart.EngineModel
             return true;
         }
 
-        public Engine(EngineType type, string manufacturer, int displacement, int power, int torque,
+        public Engine(EngineType type,int baseCost, string manufacturer, int displacement, int power, int torque,
             int numberOfCylinders) : base(1, manufacturer)
         {
             _type = type;
@@ -61,29 +61,40 @@ namespace CarFactory.CarPart.EngineModel
             _power = power;
             _torque = torque;
             _numberOfCylinders = numberOfCylinders;
+            _cost = baseCost;
         }
 
         public void setIgnitionSystem(IgnitionSystem ignitionSystem)
         {
             _ignitionSystem = ignitionSystem;
+            _cost += ignitionSystem.Cost;
         }
 
         public void setTurbine(Turbine turbine)
         {
             _turbine = turbine;
+            _cost += _turbine.Cost;
         }
 
         public void setFuelSystem(FuelSystem fuelSystem)
         {
             _fuelSystem = fuelSystem;
+            _cost += fuelSystem.Cost;
         }
 
-        public override bool HasAllComponent()
+        public override string ToString()
+        {
+            return String.Format(
+                " --- {0}: \n ---  Мощность: {1} \n  --- Крутящий момент: {2}\n ---  Объем: {3}\n ---  Количество цилиндров: {4} \n ---  Тип: {5} \n  --- {6} \n  --- {7} \n  --- Цена: {8}\n",
+                Name, _power, _torque, _displacement, _numberOfCylinders, Type, _ignitionSystem, _fuelSystem, _cost);
+        }
+
+        public override bool HasAllComponents()
         {
             return _turbine != null && _fuelSystem != null && _ignitionSystem != null;
         }
 
-        public override IActionPossible AvailableForThisCar(Car.Car car)
+        public override IActionPossible AvailableForThisCar<T>(Car<T> car)
         {
             if (!_fuelSystem.AvailableForThisCar(car).IsPossible)
             {

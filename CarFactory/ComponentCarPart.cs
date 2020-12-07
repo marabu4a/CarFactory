@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using CarFactory.Car;
 using CarFactory.Custom;
 
 namespace CarFactory
@@ -15,7 +16,7 @@ namespace CarFactory
         public abstract void AddComponent(CarPart.CarPart carPart);
         public abstract void RemoveComponent(CarPart.CarPart carPart);
 
-        public abstract bool HasAllComponent();
+        public abstract bool HasAllComponents();
         
         public IActionPossible CanRemoveComponent(CarPart.CarPart carPart)
         {
@@ -52,6 +53,6 @@ namespace CarFactory
             }
             return new ActionPossible();
         }
-
+        
     }
 }

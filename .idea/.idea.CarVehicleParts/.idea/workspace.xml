@@ -13,53 +13,46 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7d10f55-44cb-4d5b-acf7-adc5287f1920" name="Default Changelist" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Chassis.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Drivetrain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/SteeringType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Wheel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/EngineType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/IgnitionSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Turbine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Clutch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/TransmissionType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/ComponentCarPart.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/Custom/RandomGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/Factory/CarFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/Factory/CarPartsFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/Factory/ChassisFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/Factory/EngineFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/Factory/IFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarFactory/Factory/TransmissionFactory.cs" afterDir="false" />
+    <list default="true" id="a7d10f55-44cb-4d5b-acf7-adc5287f1920" name="Default Changelist" comment="v.0.1">
+      <change afterPath="$PROJECT_DIR$/CarFactory/Custom/CarEnumerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CarFactory/Custom/CarException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CarFactory/Custom/CarPartException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CarFactory/Custom/CarPartsComparer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CarFactory/Custom/ILogger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CarFactory/Custom/Logger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CarFactory/Custom/TextOutputHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CarFactory/Factory/BodyFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarVehicleParts/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarVehicleParts/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarVehicleParts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarVehicleParts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/ActionPossibility/ActionImpossible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Custom/ActionImpossible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/ActionPossibility/ActionPossible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Custom/ActionPossible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/ActionPossibility/IActionPossible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Custom/IActionPossible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/BrakeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/BrakeSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarFactory/Car/BodyType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Car/BodyType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarFactory/Car/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Car/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/CarConfigurator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPartsConfigurator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/CarFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/FuelSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/CarFactory.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarFactory.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/CarPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/Engine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Engine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/CarPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/CarPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/BrakeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/BrakeSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Chassis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Chassis.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Drivetrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Drivetrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/SteeringType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/SteeringType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Suspension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Suspension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Wheel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Wheel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Engine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Engine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/FuelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/FuelSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/IgnitionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/IgnitionSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Turbine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Turbine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Clutch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Clutch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Transmission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Transmission.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/CarPartsConfigurator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/ComponentCarPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/ComponentCarPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/Factory/CarFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Factory/CarFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/Factory/CarPartsFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Factory/CarPartsFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/Factory/ChassisFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Factory/ChassisFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/Factory/EngineFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Factory/EngineFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/Factory/IFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Factory/IFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarFactory/Factory/TransmissionFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Factory/TransmissionFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarFactory/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/Suspension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Suspension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/Transmission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Transmission.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/bin/Debug/netcoreapp3.1/CarFactory" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/bin/Debug/netcoreapp3.1/CarFactory" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/bin/Debug/netcoreapp3.1/CarFactory.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/obj/CarFactory.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/CarFactory.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/CarFactory.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarFactory/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CarFactory/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,71 +63,84 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CarFactory/Car/BodyType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CarFactory/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CarFactory/Custom/ActionImpossible.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CarFactory/Custom/ActionPossible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/00E4CC82-435B-478C-B083-227A479F9D7B/23/Environment.Unix.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D6CD46CF-9DA4-4723-8481-E4655D871ACB/E/Timer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CarFactory/CarPart/CarPart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Suspension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Engine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Transmission.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E45A25A4-136C-4B93-99AB-8526D7F1AC29/13/FileInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/BrakeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E4CC82-435B-478C-B083-227A479F9D7B/1d/7273bda1/IComparable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E4CC82-435B-478C-B083-227A479F9D7B/69/e58cd633/IEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CarFactory/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E4CC82-435B-478C-B083-227A479F9D7B/f8/21543f70/StringComparison.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CarFactory/Custom/ActionImpossible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CarFactory/Custom/ActionPossible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/00E4CC82-435B-478C-B083-227A479F9D7B/10/Array.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/00E4CC82-435B-478C-B083-227A479F9D7B/1E/Enum.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E45A25A4-136C-4B93-99AB-8526D7F1AC29/12/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E4CC82-435B-478C-B083-227A479F9D7B/ca/5b72fbc8/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/00E4CC82-435B-478C-B083-227A479F9D7B/3A4/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/00E4CC82-435B-478C-B083-227A479F9D7B/11/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/00E4CC82-435B-478C-B083-227A479F9D7B/2FF/StreamWriter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CarVehicleParts/Car/Car.cs" />
-        <option value="$PROJECT_DIR$/CarVehicleParts/Suspension.cs" />
-        <option value="$PROJECT_DIR$/CarVehicleParts/Transmission.cs" />
-        <option value="$PROJECT_DIR$/CarVehicleParts/BrakeSystem.cs" />
-        <option value="$PROJECT_DIR$/CarVehicleParts/Engine.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/ActionPossibility/ActionPossible.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Custom/ActionPossible.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Custom/ActionImpossible.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Custom/IActionPossible.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Model/Engine.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Model/BrakeSystem.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarFactory.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Wheel.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/FuelSystem.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/Suspension.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/BrakeSystem.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/Engine.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/SuspensionModel/BrakeSystem.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/SuspensionModel/Suspension.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/SuspensionModel/Wheel.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/SuspensionModel/SuspensionType.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/SuspensionType.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Car/BodyType.cs" />
         <option value="$PROJECT_DIR$/CarFactory/Base.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/IgnitionSy.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/SteeringType.cs" />
         <option value="$PROJECT_DIR$/CarFactory/Factory/CarBuilder.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/CarPart.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Suspension.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Wheel.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Factory/IFactory.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Factory/CarPartsFactory.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Clutch.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/ComponentCarPart.cs" />
         <option value="$PROJECT_DIR$/CarFactory/Custom/RandomGenerator.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Chassis.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Drivetrain.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Program.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Factory/ChassisFactory.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/BrakeSystem.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/EngineType.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/FuelSystem.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/TransmissionType.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/CarEnumertaor.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/ComponentCarPart.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Factory/CarBodyFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Factory/ChassisFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Factory/TransmissionFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Factory/BodyFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/CarEnumerator.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Factory/CarPartsFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/Comparer.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/CarComparer.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/Log.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/CarPartsComparer.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Clutch.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Factory/EngineFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Drivetrain.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/BrakeSystem.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Factory/IGetRandomType.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Wheel.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Suspension.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Car/BodyType.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/IgnitionSystem.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Turbine.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/TransmissionType.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Factory/EngineFactory.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Car/Car.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Engine.cs" />
         <option value="$PROJECT_DIR$/CarFactory/CarPart/TransmissionModel/Transmission.cs" />
-        <option value="$PROJECT_DIR$/CarFactory/Factory/TransmissionFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/FuelSystem.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/Chassis.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/EngineModel/Engine.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/ChassisModel/SteeringType.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/ILogger.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/LogException.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/CarPartException.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/TextOutputHandler.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Factory/IFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/CarException.cs" />
         <option value="$PROJECT_DIR$/CarFactory/Factory/CarFactory.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/CarPart/CarPart.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Car/Car.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Program.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/Logs.cs" />
+        <option value="$PROJECT_DIR$/CarFactory/Custom/Logger.cs" />
       </list>
     </option>
   </component>
@@ -150,8 +156,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_opened_file_path" value="$USER_HOME$/cars" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../net_project_museum" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -192,7 +198,20 @@
       <workItem from="1603619072597" duration="26870000" />
       <workItem from="1603720482867" duration="19860000" />
       <workItem from="1604071063164" duration="1480000" />
-      <workItem from="1604223831950" duration="10142000" />
+      <workItem from="1604223831950" duration="30361000" />
+      <workItem from="1604591476916" duration="5403000" />
+      <workItem from="1604675471689" duration="39847000" />
+      <workItem from="1604832378885" duration="28956000" />
+      <workItem from="1604928464071" duration="614000" />
+      <workItem from="1604940344982" duration="8350000" />
+      <workItem from="1605799150572" duration="1218000" />
+      <workItem from="1605885276511" duration="19236000" />
+      <workItem from="1606199482558" duration="2491000" />
+      <workItem from="1606649494407" duration="11489000" />
+      <workItem from="1606766816458" duration="120000" />
+      <workItem from="1606920565984" duration="7935000" />
+      <workItem from="1607277761680" duration="597000" />
+      <workItem from="1607363236387" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1602401552049</created>
@@ -208,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602402416054</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="v.0.1">
+      <created>1604235182363</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604235182363</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,116 +257,173 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="v.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.0.1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="743" y="291" width="435" height="511" key="FileChooserDialogImpl" timestamp="1602403640251">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="743" y="313" width="424" height="480" key="FileChooserDialogImpl" timestamp="1606968941659">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="743" y="291" width="435" height="511" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602403640251" />
-    <state x="743" y="313" width="424" height="480" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1600606307117" />
+    <state x="743" y="291" width="435" height="511" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606147433088" />
+    <state x="743" y="554" key="FileChooserDialogImpl/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1604928522993" />
+    <state x="743" y="569" width="424" height="480" key="FileChooserDialogImpl/0.1080.1920.1080/0.30.1920.1050@0.1080.1920.1080" timestamp="1604743227434" />
+    <state x="743" y="313" width="424" height="480" key="FileChooserDialogImpl/0.1080.1920.1080/0.30.1920.1050@0.30.1920.1050" timestamp="1606968941659" />
+    <state x="743" y="313" width="424" height="480" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1606048313847" />
     <state x="798" y="462" key="Github.ShareDialog" timestamp="1602402998010">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="798" y="462" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602402998010" />
-    <state width="1872" height="417" key="GridCell.Tab.0.bottom" timestamp="1604234891319">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602404066751" />
-    <state width="1872" height="417" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891319" />
-    <state width="1872" height="417" key="GridCell.Tab.0.center" timestamp="1604234891319">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602404066748" />
-    <state width="1872" height="417" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891319" />
-    <state width="1872" height="417" key="GridCell.Tab.0.left" timestamp="1604234891318">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602404066747" />
-    <state width="1872" height="417" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891318" />
-    <state width="1872" height="417" key="GridCell.Tab.0.right" timestamp="1604234891319">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="277" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602404066750" />
-    <state width="1872" height="417" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891319" />
-    <state width="1872" height="417" key="GridCell.Tab.1.bottom" timestamp="1604234900077">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.1.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604234900077" />
-    <state width="1872" height="417" key="GridCell.Tab.1.center" timestamp="1604234900077">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.1.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604234900077" />
-    <state width="1872" height="417" key="GridCell.Tab.1.left" timestamp="1604234900077">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.1.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604234900077" />
-    <state width="1872" height="417" key="GridCell.Tab.1.right" timestamp="1604234900077">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.1.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604234900077" />
-    <state width="1872" height="417" key="GridCell.Tab.2.bottom" timestamp="1604234891198">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.2.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891198" />
-    <state width="1872" height="417" key="GridCell.Tab.2.center" timestamp="1604234891197">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.2.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891197" />
-    <state width="1872" height="417" key="GridCell.Tab.2.left" timestamp="1604234891197">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.2.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891197" />
-    <state width="1872" height="417" key="GridCell.Tab.2.right" timestamp="1604234891198">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.2.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891198" />
-    <state width="1872" height="417" key="GridCell.Tab.3.bottom" timestamp="1604234891198">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.3.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891198" />
-    <state width="1872" height="417" key="GridCell.Tab.3.center" timestamp="1604234891198">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.3.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891198" />
-    <state width="1872" height="417" key="GridCell.Tab.3.left" timestamp="1604234891198">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.3.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891198" />
-    <state width="1872" height="417" key="GridCell.Tab.3.right" timestamp="1604234891198">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.3.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891198" />
-    <state width="1872" height="417" key="GridCell.Tab.4.bottom" timestamp="1604234891199">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.4.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891199" />
-    <state width="1872" height="417" key="GridCell.Tab.4.center" timestamp="1604234891199">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.4.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891199" />
-    <state width="1872" height="417" key="GridCell.Tab.4.left" timestamp="1604234891199">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.4.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891199" />
-    <state width="1872" height="417" key="GridCell.Tab.4.right" timestamp="1604234891199">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1872" height="417" key="GridCell.Tab.4.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604234891199" />
-    <state x="913" y="231" width="1007" height="726" key="SettingsEditor" timestamp="1602516196931">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="913" y="207" width="1007" height="726" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602404455861" />
-    <state x="913" y="231" width="1007" height="726" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1602516196931" />
-    <state x="100" y="130" width="1720" height="850" key="VCS.FileHistoryDialog" timestamp="1604227392255">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="100" y="103" width="1720" height="875" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602530859966" />
-    <state x="100" y="130" width="1720" height="850" key="VCS.FileHistoryDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604227392255" />
-    <state x="494" y="269" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1602403024271">
+    <state width="1872" height="297" key="GridCell.Tab.0.bottom" timestamp="1606973279508">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="494" y="269" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602403024271" />
+    <state width="1872" height="179" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606148824302" />
+    <state width="1872" height="297" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606973279508" />
+    <state width="1872" height="17" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1606202600607" />
+    <state width="1872" height="96" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.30.1920.1050@0.30.1920.1050" timestamp="1606971028089" />
+    <state width="1872" height="291" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604864250596" />
+    <state width="1872" height="297" key="GridCell.Tab.0.center" timestamp="1606973279507">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="179" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606148824302" />
+    <state width="1872" height="297" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606973279507" />
+    <state width="1872" height="17" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1606202600607" />
+    <state width="1872" height="96" key="GridCell.Tab.0.center/0.1080.1920.1080/0.30.1920.1050@0.30.1920.1050" timestamp="1606971028089" />
+    <state width="1872" height="291" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604864250596" />
+    <state width="1872" height="297" key="GridCell.Tab.0.left" timestamp="1606973279507">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="179" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606148824301" />
+    <state width="1872" height="297" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606973279507" />
+    <state width="1872" height="17" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1606202600607" />
+    <state width="1872" height="96" key="GridCell.Tab.0.left/0.1080.1920.1080/0.30.1920.1050@0.30.1920.1050" timestamp="1606971028089" />
+    <state width="1872" height="291" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604864250595" />
+    <state width="1872" height="297" key="GridCell.Tab.0.right" timestamp="1606973279507">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="179" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606148824302" />
+    <state width="1872" height="297" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606973279507" />
+    <state width="1872" height="17" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1606202600607" />
+    <state width="1872" height="96" key="GridCell.Tab.0.right/0.1080.1920.1080/0.30.1920.1050@0.30.1920.1050" timestamp="1606971028089" />
+    <state width="1872" height="291" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604864250596" />
+    <state width="1872" height="417" key="GridCell.Tab.1.bottom" timestamp="1604928100052">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100052" />
+    <state width="1872" height="417" key="GridCell.Tab.1.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845427" />
+    <state width="1872" height="417" key="GridCell.Tab.1.center" timestamp="1604928100051">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100051" />
+    <state width="1872" height="417" key="GridCell.Tab.1.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845426" />
+    <state width="1872" height="417" key="GridCell.Tab.1.left" timestamp="1604928100049">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100049" />
+    <state width="1872" height="417" key="GridCell.Tab.1.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845426" />
+    <state width="1872" height="417" key="GridCell.Tab.1.right" timestamp="1604928100052">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100052" />
+    <state width="1872" height="417" key="GridCell.Tab.1.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845427" />
+    <state width="1872" height="417" key="GridCell.Tab.2.bottom" timestamp="1604928100053">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100053" />
+    <state width="1872" height="417" key="GridCell.Tab.2.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845428" />
+    <state width="1872" height="417" key="GridCell.Tab.2.center" timestamp="1604928100053">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100053" />
+    <state width="1872" height="417" key="GridCell.Tab.2.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845427" />
+    <state width="1872" height="417" key="GridCell.Tab.2.left" timestamp="1604928100052">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100052" />
+    <state width="1872" height="417" key="GridCell.Tab.2.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845427" />
+    <state width="1872" height="417" key="GridCell.Tab.2.right" timestamp="1604928100053">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100053" />
+    <state width="1872" height="417" key="GridCell.Tab.2.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845428" />
+    <state width="1872" height="417" key="GridCell.Tab.3.bottom" timestamp="1604928100054">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100054" />
+    <state width="1872" height="417" key="GridCell.Tab.3.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845429" />
+    <state width="1872" height="417" key="GridCell.Tab.3.center" timestamp="1604928100053">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100053" />
+    <state width="1872" height="417" key="GridCell.Tab.3.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845428" />
+    <state width="1872" height="417" key="GridCell.Tab.3.left" timestamp="1604928100053">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100053" />
+    <state width="1872" height="417" key="GridCell.Tab.3.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845428" />
+    <state width="1872" height="417" key="GridCell.Tab.3.right" timestamp="1604928100054">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100054" />
+    <state width="1872" height="417" key="GridCell.Tab.3.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845429" />
+    <state width="1872" height="417" key="GridCell.Tab.4.bottom" timestamp="1604928100055">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100055" />
+    <state width="1872" height="417" key="GridCell.Tab.4.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845430" />
+    <state width="1872" height="417" key="GridCell.Tab.4.center" timestamp="1604928100054">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100054" />
+    <state width="1872" height="417" key="GridCell.Tab.4.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845429" />
+    <state width="1872" height="417" key="GridCell.Tab.4.left" timestamp="1604928100054">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100054" />
+    <state width="1872" height="417" key="GridCell.Tab.4.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845429" />
+    <state width="1872" height="417" key="GridCell.Tab.4.right" timestamp="1604928100054">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="417" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604928100054" />
+    <state width="1872" height="417" key="GridCell.Tab.4.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604861845429" />
+    <state x="555" y="275" width="800" height="526" key="Rider.ProjectTemplateDialog.Size" timestamp="1604924046431">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="275" width="800" height="526" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1604924046431" />
+    <state x="762" y="188" width="386" height="672" key="RiderGenerateDialog" timestamp="1606138064669">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="762" y="188" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606138064669" />
+    <state x="762" y="213" key="RiderGenerateDialog/0.1080.1920.1080/0.30.1920.1050@0.30.1920.1050" timestamp="1604992238134" />
+    <state x="762" y="213" width="386" height="672" key="RiderGenerateDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604255439923" />
+    <state x="913" y="1287" width="1007" height="726" key="SettingsEditor" timestamp="1604675577423">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="913" y="207" width="1007" height="726" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602404455861" />
+    <state x="913" y="207" key="SettingsEditor/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1604593768488" />
+    <state x="913" y="1287" key="SettingsEditor/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1604675577423" />
+    <state x="913" y="231" width="1007" height="726" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1602516196931" />
+    <state x="101" y="103" width="1719" height="875" key="VCS.FileHistoryDialog" timestamp="1606661643779">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="100" y="103" width="1720" height="875" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602530859966" />
+    <state x="101" y="103" width="1719" height="875" key="VCS.FileHistoryDialog/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606661643779" />
+    <state x="100" y="130" width="1720" height="850" key="VCS.FileHistoryDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604227392255" />
+    <state x="494" y="269" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1606138677332">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="494" y="269" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606138677332" />
+    <state x="494" y="292" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1604235190172" />
+    <state x="749" y="453" width="411" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604898970164">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="749" y="453" width="411" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604898970164" />
+    <state x="625" y="514" width="669" height="566" key="find.popup" timestamp="1606766828296">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="625" y="514" width="669" height="566" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606148590271" />
+    <state x="625" y="514" width="669" height="566" key="find.popup/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606664562902" />
+    <state x="625" y="1594" width="669" height="566" key="find.popup/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1606200698175" />
+    <state x="625" y="514" width="669" height="566" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1606766828296" />
     <state x="624" y="255" key="run.anything.popup" timestamp="1603638434486">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -354,17 +437,43 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CarFactory/Car/Car.cs</url>
-          <line>116</line>
-          <properties documentPath="$PROJECT_DIR$/CarFactory/Car/Car.cs" initialLine="116">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E45A25A4-136C-4B93-99AB-8526D7F1AC29/12/File.cs</url>
+          <line>47</line>
+          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E45A25A4-136C-4B93-99AB-8526D7F1AC29/12/File.cs" initialLine="47">
             <startOffsets>
-              <option value="3182" />
+              <option value="1336" />
             </startOffsets>
             <endOffsets>
-              <option value="3267" />
+              <option value="1382" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E45A25A4-136C-4B93-99AB-8526D7F1AC29/12/File.cs</url>
+          <line>120</line>
+          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E45A25A4-136C-4B93-99AB-8526D7F1AC29/12/File.cs" initialLine="120">
+            <startOffsets>
+              <option value="4811" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4824" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E45A25A4-136C-4B93-99AB-8526D7F1AC29/12/File.cs</url>
+          <line>137</line>
+          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E45A25A4-136C-4B93-99AB-8526D7F1AC29/12/File.cs" initialLine="137">
+            <startOffsets>
+              <option value="5543" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5544" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

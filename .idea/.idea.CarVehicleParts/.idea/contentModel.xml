@@ -33,15 +33,22 @@
             <e p="TransmissionType.cs" t="Include" />
           </e>
         </e>
-        <e p="CarPartsConfigurator.cs" t="Include" />
         <e p="ComponentCarPart.cs" t="Include" />
         <e p="Custom" t="Include">
           <e p="ActionImpossible.cs" t="Include" />
           <e p="ActionPossible.cs" t="Include" />
+          <e p="CarEnumerator.cs" t="Include" />
+          <e p="CarException.cs" t="Include" />
+          <e p="CarPartException.cs" t="Include" />
+          <e p="CarPartsComparer.cs" t="Include" />
           <e p="IActionPossible.cs" t="Include" />
+          <e p="ILogger.cs" t="Include" />
+          <e p="Logger.cs" t="Include" />
           <e p="RandomGenerator.cs" t="Include" />
+          <e p="TextOutputHandler.cs" t="Include" />
         </e>
         <e p="Factory" t="Include">
+          <e p="BodyFactory.cs" t="Include" />
           <e p="CarFactory.cs" t="Include" />
           <e p="CarPartsFactory.cs" t="Include" />
           <e p="ChassisFactory.cs" t="Include" />

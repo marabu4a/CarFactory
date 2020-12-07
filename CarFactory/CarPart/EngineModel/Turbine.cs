@@ -1,10 +1,12 @@
+using CarFactory.Car;
 using CarFactory.Custom;
 
 namespace CarFactory.CarPart.EngineModel
 {
     public class Turbine : CarPart
     {
-        public override int _cost { get; }
+        protected override int _cost { get; set; }
+        protected override string _name => " --- Турбонагнетатель";
 
 
         public Turbine(int cost, string manufacturer) : base(1, manufacturer)
@@ -12,7 +14,12 @@ namespace CarFactory.CarPart.EngineModel
             _cost = cost;
         }
 
-        public override IActionPossible AvailableForThisCar(Car.Car car)
+        public override string ToString()
+        {
+            return Name ?? " --- Турбонагнетатель отсутствует";
+        }
+
+        public override IActionPossible AvailableForThisCar<T>(Car<T> car)
         {
             switch (car.Engine.Type)
             {
